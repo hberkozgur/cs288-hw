@@ -163,17 +163,17 @@ int main() {
     fprintf(resultFile, "\nvalues: ");
     // Write the elements of the result matrix (values, column indices, row starts)
     for (int i = 0; i < m3; i++) {
-        fprintf(resultFile, "%d", result_values[i]);
+        fprintf(resultFile, "%d ", result_values[i]);
     }
     fprintf(resultFile, "\ncolumn indices: ");
     for (int i = 0; i < m3; i++) {
-        fprintf(resultFile, "%d", result_column_indices[i]);
+        fprintf(resultFile, "%d ", result_column_indices[i]);
     }
     fprintf(resultFile, "\nrow start: ");
     for (int i = 0; i <= n1; i++) {
-        fprintf(resultFile, "%d", result_row_start[i]);
+        fprintf(resultFile, "%d ", result_row_start[i]);
     }
-
+    fprintf(resultFile, "\n");
     // Close the output file
     fclose(resultFile);
 
