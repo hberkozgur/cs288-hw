@@ -159,19 +159,19 @@ int main() {
 
     // Write the number of rows and non-zero values of the result matrix
     fprintf(resultFile, "%d\n", n1);
-    fprintf(resultFile, "%d\n", m3);
+    fprintf(resultFile, "Non-zero elements: %d\n", m3);
     fprintf(resultFile, "\nvalues: ");
     // Write the elements of the result matrix (values, column indices, row starts)
     for (int i = 0; i < m3; i++) {
-        fprintf(resultFile, "%d\n", result_values[i]);
+        fprintf(resultFile, "%d", result_values[i]);
     }
     fprintf(resultFile, "\ncolumn indices: ");
     for (int i = 0; i < m3; i++) {
-        fprintf(resultFile, "%d\n", result_column_indices[i]);
+        fprintf(resultFile, "%d", result_column_indices[i]);
     }
     fprintf(resultFile, "\nrow start: ");
     for (int i = 0; i <= n1; i++) {
-        fprintf(resultFile, "%d\n", result_row_start[i]);
+        fprintf(resultFile, "%d", result_row_start[i]);
     }
 
     // Close the output file
