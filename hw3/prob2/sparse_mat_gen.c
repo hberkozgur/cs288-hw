@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define ROWS 5
-#define COLS 5
+#define ROWS 3
+#define COLS 3
 #define RATIO 0.2  // The probability that a given element is non-zero
 
 void generate_sparse(char *filename) {

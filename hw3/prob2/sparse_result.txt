@@ -1,0 +1,6 @@
+3
+Non-zero elements: 4
+
+values: 5 9 8 1 
+column indices: 0 2 1 0 
+row start: 0 2 3 4 
